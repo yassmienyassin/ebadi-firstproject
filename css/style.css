@@ -3,6 +3,7 @@ body{
     direction: rtl;
     font-family:Cairo;
     font-size: 22px;
+    overflow-x: hidden;
     
 }h2{
 	position: relative;
@@ -84,12 +85,11 @@ header{
     }
     .about .container .about-img{
         background: url("../imgs/who-are-we.png") no-repeat;
-        background-size: contain;
-        width: 630px;
-        height: 719px;
+        background-size: cover;
+        height: 526px;
     }.about .container .about-content{
-        padding-top: 209px;
-    padding-right: 48px;
+        padding-top: 154px;
+    
     }
 /* end about section */
 /* start provides section */
@@ -126,12 +126,18 @@ header{
         padding-bottom: 30px;
         background-image: url("../imgs/bg30-Ar1web.gif");
     }
+    .work2 {
+        background-image: url("../imgs/articles.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
     .work .work-img{
         text-align:center;
         border-radius: 10%;
         background: #fff;
-        margin: 20px 30px;
-         padding: 0px;
+        margin: 20px auto;
+        padding-bottom: 10px;
         
     }
     .work .work-img img{
@@ -144,7 +150,8 @@ header{
     }
     .work .link-button,
     .work2 .link-button{
-        margin: 0 377px;
+    display:block;
+    margin: 25px auto;
     border-radius: 18px;
     padding: 10px;
     width: 226px;
@@ -177,7 +184,8 @@ header{
             
         border-radius: 10%;
         border:1px solid #eee;
-        margin: 20px 40px;
+        margin: 20px auto;
+        background-color: #fff;
     }
     .work2 .work2-img img{
          width: 100%;
@@ -193,22 +201,22 @@ header{
         padding:16px;
     }
     .work2 .work2-img .watches a{
-        float: right;
-    border-radius: 18px;
-    padding: 0px;
-    width: 80px;
-        font-size: 17px;
-    background: #001232;
-    color: #fff;
-    height: 34px;
-    margin: 0px;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 3px;
+       
+        border-radius: 18px;
+        padding: 6px;
+        
+        background: #001232;
+        color: #fff;
+        
+        margin: 5px;
+        text-align: center;
+        text-decoration: none;
+        
+    
     }.work2 .work2-img .watches a:hover{
          color: #00adef;
-             transition-delay: 0.5s;
-    transition: .5s;
+        transition-delay: 0.5s;
+        transition: .5s;
    
     
     }
@@ -236,6 +244,10 @@ header{
          background-repeat: no-repeat;
          padding: 50px;
         color:#fff;
+    }footer img{
+        width:56%;
+    }footer .footer-logo{
+        padding-top: 30px;
     }
     footer .footer-logo p{
         padding: 20px;
@@ -262,60 +274,39 @@ header{
         color:#5087cc;
     }
  
- /*start scroll button */
-    .scroll-btn{
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	background: #3AADE6;
-	color: #fff;
-	border-radius: 50%;
-	padding: 10px;
-	border-width: 0;
-    display: none;
-	transition: 0.5s all;
-	width: 40px;
-	height: 40px;
-	
-}
-svg.svg-inline--fa.fa-arrow-circle-up.fa-w-16.hvr-wobble-vertical{
-	color:#fff !important;
-}
-.scroll-btn:hover{
-	cursor: pointer;
-}
-.showw{
-	display: block;
-}
-svg.svg-inline--fa.fa-arrow-up.fa-w-14.fa-2x{
-	color: #fff;
-}
+ 
 /* start media code */
-@media (max-width:700px) {
-    .demos .owl-carousel .item h4{
-        font-size: 20px;
+
+
+
+@media only screen and (max-width: 1200px){
+    .about .container .about-content{
+        padding-top: 95px;
+    
+    }.about .container .about-img{
+        background-size: contain;
+    height: 662px;
     }
-    .demos .owl-carousel .item p{
-        font-size: 14px;
 }
-}
-@media (max-width:628px) {
-    .demos .owl-carousel .item h4{
-        font-size: 14px;
+@media only screen and (max-width: 1023px){
+    .about .container .about-content{
+        padding-top: 14px;
+        text-align: center;
+    }.about .container .about-img{
+        background-size: cover;
+        height: 806px;
+    }
+    @media only screen and (max-width: 767px){
+        .about .container .about-img{
+            background-size: contain;
+            height: 400px;
+        }
     }
    
-}
-@media (max-width:700px) {
-    .demos .owl-carousel .item h4{
-        font-size: 2px;
+    @media only screen and (max-width: 480px){
+        .about .container .about-content{
+            padding-top: 27px;
+        }.about .container .about-img{
+            height: 382px;
+        }
     }
-    .demos .owl-carousel .item p{
-        font-size: 2px;
-}
-}
-@media (max-width:759px) {
-    .work .link-button,
-    .work2 .link-button{
-        margin: 0 169px;
-    }
-}

@@ -1,6 +1,9 @@
 body{
   font-family:Cairo;
 }
+.navbar-collapse .navbar-nav .nav-item a:hover{
+  color:#000;
+}
 .work2 nav
 {
     margin: auto;
@@ -79,7 +82,8 @@ body{
     }
     .header-one img{
             width: 30%;
-    margin: 21px 417px;
+    margin: auto;
+    display: block;
     }
     .detailes{
         background-image: url("../imgs/details-bg.png");
@@ -88,6 +92,9 @@ body{
         padding: 20px 71px;
         text-align: center;
         
+    }.pagination{
+      justify-content: center;
+    padding-top: 20px;
     }
     /* start carosal card */
     .card2{
